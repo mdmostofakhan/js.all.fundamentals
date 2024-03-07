@@ -7,11 +7,40 @@
 </head>
 <body>
     <h1>This is a Monthly</h1>
+
+    <button onclick="this.style.display='none'">Click to Remove Me!</button>
     <!-- <p id="demo"></p> -->
-    
+     
+
+
     <script src="../../first.js"></script>
     <script src="../../error.js"></script>
-    
+    <script src="../../thisKey.js"></script>
+    <script src="../../classes.js"></script>
     <script src="../../typeConvert.js"></script>
+ <br> 
+ <br>
+    <div>
+        <button id="btn">Click Me!</button>
+
+<p id="demo"></p>
+
+<script>
+let hello = "";
+
+hello = function() {
+  document.getElementById("demo").innerHTML += this;
+}
+
+//The window object calls the function:
+window.addEventListener("load", hello);
+
+//A button object calls the function:
+document.getElementById("btn").addEventListener("click", hello);
+</script>
+    </div>
 </body>
 </html>
+
+
+

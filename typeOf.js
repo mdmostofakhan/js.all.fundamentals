@@ -7,3 +7,5 @@ function isArray(myArray){
 }
 
 isArray({name: "mostofa", age: 12})
+
+
